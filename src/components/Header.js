@@ -113,7 +113,7 @@ const Header = () => {
                     <div className="badge text-success fs-1 text-wrap w-3">
                         Grab 50% Off On Selected Headphone 
                     </div>
-                    <div>
+                    <div className="text-center">
                         <button type="button" className=" BuyNow btn btn-success">Buy Now</button>
                     </div>
                 </div>
@@ -126,7 +126,6 @@ const Header = () => {
 
 
 {/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
-
 
     </div>
     </React.Fragment>
