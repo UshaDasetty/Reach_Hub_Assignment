@@ -1,0 +1,20 @@
+.BuyNow {
+    border-radius: 50px;
+    width: 120px;
+}
+
+.OfferText {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.GirlImage {
+    margin-right: 150px;
+} */
+
+.Offer {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
