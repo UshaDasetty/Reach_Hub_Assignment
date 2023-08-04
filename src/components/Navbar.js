@@ -9,7 +9,7 @@ const Navbar = () => {
 
                 <div className="container-fluid">
                     <a className="navbar-brand text-success" href="#">
-                    <img src={logo} alt="Logo" width="30" height="24" class="d-inline-block align-text-top "/>
+                    <img src={logo} alt="Logo" width="30" height="24" className="d-inline-block align-text-top "/>
                         <span className="fs-4 me-3"> ShopCart</span>
                     </a>
 
@@ -47,12 +47,12 @@ const Navbar = () => {
                         </form>
 
                         <a className="navbar-brand me-5" href="#">
-                            <i class="bi bi-person-circle"></i>
+                            <i className="bi bi-person-circle"></i>
                             <span className=""> Account</span>
                         </a>
 
                         <a className="navbar-brand me-5" href="#">
-                            <i class="bi bi-cart3"></i>
+                            <i className="bi bi-cart3"></i>
                             <span className=""> Cart</span>
                         </a>
                     </div>

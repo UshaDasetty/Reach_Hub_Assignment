@@ -1,6 +1,6 @@
 // rafce
 import React from 'react'
-import '../components/Styles.css'
+import '../Styles/Styles.css'
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
 
                     {/* telephone call */}
                     <a className="navbar-brand text-light" href="#">
-                        <i class="bi bi-telephone"><span> </span></i>
+                        <i className="bi bi-telephone"><span> </span></i>
                         +001234567890
                     </a>
                 

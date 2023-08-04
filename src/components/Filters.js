@@ -86,15 +86,15 @@ const Filters = () => {
                             </ul>
 
                             <ul>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle rounded-pill bg-secondary bg-gradient bg-opacity-25" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle rounded-pill bg-secondary bg-gradient bg-opacity-25" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span className="ps-3"> Offer </span>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">10% Off</a></li>
-                                    <li><a class="dropdown-item" href="#">20% Off</a></li>
-                                    <li><a class="dropdown-item" href="#">30% Off</a></li>
-                                    <li><a class="dropdown-item" href="#">50% Off</a></li>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="#">10% Off</a></li>
+                                    <li><a className="dropdown-item" href="#">20% Off</a></li>
+                                    <li><a className="dropdown-item" href="#">30% Off</a></li>
+                                    <li><a className="dropdown-item" href="#">50% Off</a></li>
                                 </ul>
                             </li>
                             </ul>
@@ -103,15 +103,15 @@ const Filters = () => {
 
                         <div>
                             <ul>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle rounded-pill bg-secondary bg-gradient bg-opacity-25" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle rounded-pill bg-secondary bg-gradient bg-opacity-25" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span className="ps-3"> Sort </span>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Low to High</a></li>
-                                    <li><a class="dropdown-item" href="#">High to Low</a></li>
-                                    <li><a class="dropdown-item" href="#">Discount</a></li>
-                                    <li><a class="dropdown-item" href="#">Rating</a></li>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="#">Low to High</a></li>
+                                    <li><a className="dropdown-item" href="#">High to Low</a></li>
+                                    <li><a className="dropdown-item" href="#">Discount</a></li>
+                                    <li><a className="dropdown-item" href="#">Rating</a></li>
                                 </ul>
                             </li>
                             </ul>

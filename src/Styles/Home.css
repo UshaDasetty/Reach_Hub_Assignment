@@ -15,6 +15,12 @@
     width: 100%;
 }
 
-ul {
-    list-style-type: none;
+#container {
+    display: flex;
+    margin: 2vmax auto;
+    margin-top: 0.1vmax;
+    width: 80vmax;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
 }
