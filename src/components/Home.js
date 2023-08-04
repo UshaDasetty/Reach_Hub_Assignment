@@ -1,24 +1,29 @@
 import React, { useEffect } from 'react';
 import '../Styles/Home.css';
 import Girl from '../Assets/Girl.jpg'
-import Filters from './Filters.js';
-import Product from './Product.js';
+import Filters from './Filters';
+import Product from './Product';
 import {getProducts} from '../actions/productAction';
 import { useSelector, useDispatch } from 'react-redux'
 
 
 
-const product = {
-    name: 'White Shirt',
-    images: [{url:"https://t3.ftcdn.net/jpg/04/58/26/98/240_F_458269888_MXyWFCmbkH9Lscfzwz9NOAwSuGEY4zSm.jpg"}],
-    price:'₹500',
-    _id: 'usha',
-}
+// const product = {
+//     name: 'White Shirt',
+//     images: [{url:"https://t3.ftcdn.net/jpg/04/58/26/98/240_F_458269888_MXyWFCmbkH9Lscfzwz9NOAwSuGEY4zSm.jpg"}],
+//     price:'₹500',
+//     _id: 'usha',
+// }
+
 
 const Home = () => {
     
 /*------------------------------------------------------------------------------------------------------ */
     const dispatch = useDispatch();
+    const { loading, error, products, productsCount } = useSelector(
+        state => state.products
+    );
+    console.log(products);
 
     useEffect(() => {
         dispatch(getProducts());
@@ -54,15 +59,9 @@ const Home = () => {
 
         <h2 className = "homeHeading text-center text-decoration-underline text-dark">HeadPhones For You!</h2>
         <div className = "container" id = "container">
-            <Product product={product} />
-            <Product product={product} />
-            <Product product={product} />
-            <Product product={product} />
-
-            <Product product={product} />
-            <Product product={product} />
-            <Product product={product} />
-            <Product product={product} />
+            { products && products.length ? products.map((product) => {
+                return <Product product={product} />
+            }) : <div>Loading.....</div>}
         </div>
 
 {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
@@ -70,5 +69,7 @@ const Home = () => {
     </React.Fragment>
   )
 }
+
+
 
 export default Home
