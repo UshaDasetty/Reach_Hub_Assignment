@@ -17,12 +17,13 @@ const Product = ({ product }) => {
   return (
     <div className='col-12 col-sm-12 col-md-6 col-lg-3'>
       <Link className="productCard" to={product.id}>
-        <img src={product.thumbnail} alt={product.title} style={{ width: '100%', height: '100%', }} />
+        <img src={product.thumbnail} alt={product.title} />
         <p>{product.title}</p>
         <div>
           <ReactStars value={product.rating} /> <span className='text-bold mt-2'> (250) </span>
         </div>
         <span>${product.price}</span>
+        <button type="button" className=" AddBtn btn btn-secondary bg-opacity-10">Add</button>
       </Link>
     </div>
   )
