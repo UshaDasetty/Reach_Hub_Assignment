@@ -5,23 +5,26 @@ import ReactStars from 'react-rating-stars-component';
 
 const options = {
   edit: false,
-  color:"rgba(20,20,20,0.1)",
+  color: "rgba(20,20,20,0.1)",
   activeColor: "tomato",
-  size: window.innerWidth < 600 ? 20: 25,
+  size: window.innerWidth < 600 ? 20 : 25,
   value: 2.5,
   isHalf: true,
 }
 
 const Product = ({ product }) => {
+  console.log("in prod comppp", product);
   return (
-    <Link className="productCard" to={product._id}>
-        <img src={product.images[0].url} alt={product.name}/>
-        <p>{ product.name }</p>
+    <div className='col-12 col-sm-12 col-md-6 col-lg-3'>
+      <Link className="productCard" to={product.id}>
+        <img src={product.thumbnail} alt={product.title} style={{ width: '100%', height: '100%', }} />
+        <p>{product.title}</p>
         <div>
-           <ReactStars {...options} /> <span> (256 Reviews) </span>
+          <ReactStars value={product.rating} /> <span className='text-bold mt-2'> (250) </span>
         </div>
-        <span>{ product.price }</span>
-    </Link>
+        <span>${product.price}</span>
+      </Link>
+    </div>
   )
 }
 

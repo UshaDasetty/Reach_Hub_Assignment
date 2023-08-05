@@ -8,11 +8,16 @@ import {
 } from "../constants/productConstants.js";
 
 
-export const getProducts = () => async(dispatch) => {
+export const getProducts = () => async (dispatch) => {
     try {
-        dispatch({type: ALL_PRODUCT_REQUEST });
+        dispatch({ type: ALL_PRODUCT_REQUEST });
 
-        const data = await axios.get("https://fakestoreapi.com/products");
+        const resposne = await axios.get("https://dummyjson.com/products");
+        console.log("response....", resposne);
+        let data = []
+        if (resposne.status === 200) {
+            data = resposne.data.products
+        }
 
         dispatch({
             type: ALL_PRODUCT_SUCCESS,
