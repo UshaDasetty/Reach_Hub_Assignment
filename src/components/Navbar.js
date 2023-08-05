@@ -8,8 +8,8 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg mt-3">
 
                 <div className="container-fluid">
-                    <a className="navbar-brand text-success" href="#">
-                    <img src={logo} alt="Logo" width="30" height="24" className="d-inline-block align-text-top "/>
+                    <a className="navbar-brand text-success" href="/">
+                        <img src={logo} alt="Logo" width="30" height="24" className="d-inline-block align-text-top "/>
                         <span className="fs-4 me-3"> ShopCart</span>
                     </a>
 
@@ -17,7 +17,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle fs-5 me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a className="nav-link dropdown-toggle fs-6 me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Categories
                         </a>
                         <ul className="dropdown-menu">
@@ -29,14 +29,14 @@ const Navbar = () => {
 
 
                         <li className="nav-item">
-                        <a className="nav-link active fs-5 me-3" aria-current="page" href="#">Deals</a>
+                        <a className="nav-link active fs-6 me-3" aria-current="page" href="#">Deals</a>
                         </li>
 
                         <li className="nav-item">
-                        <a className="nav-link fs-5 me-3" href="#">What's New</a>
+                        <a className="nav-link fs-6 me-3" href="#">What's New</a>
                         </li>
 
-                        <li className="nav-item fs-5 me-3">
+                        <li className="nav-item fs-6 me-3">
                         <a className="nav-link" href="#">Delivery</a>
                         </li>
 
