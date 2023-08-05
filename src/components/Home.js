@@ -61,7 +61,13 @@ const Home = () => {
         <div className = "container" id = "container">
             { products && products.length ? products.map((product) => {
                 return <Product product={product} />
-            }) : <div>Loading.....</div>}
+            }) : 
+                <div className="d-flex justify-content-center mt-5">
+                    <div className="spinner-border" role="status">
+                         <span className="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            }
         </div>
 
 {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
