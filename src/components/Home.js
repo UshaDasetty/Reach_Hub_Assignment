@@ -62,7 +62,11 @@ const Home = () => {
                 {products && products.length ? products.map((item) => {
                     console.log("product....", item);
                     return <Product product={item} />
-                }) : <div>Loading.....</div>}
+                }) : <div className="d-flex justify-content-center">
+                        <div class="spinner-grow" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>}
             </div>
 
             {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
