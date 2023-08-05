@@ -1,0 +1,28 @@
+.Rating {}
+
+.Btn {
+    border-radius: 100px;
+    width: 150px;
+
+}
+
+.Btn:hover {
+    background-color: #198754;
+    color: #fff;
+}
+
+.Details > div > p{
+    font-size: 12px;
+}
+
+.Details > div > div > div > p{
+    font-size: 14px;
+}
+
+.Details > div > div > div > a {
+    font-size: 12px;
+}
+
+.bi {
+    color: orange;
+}

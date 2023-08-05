@@ -23,7 +23,7 @@ const Product = ({ product }) => {
           <ReactStars value={product.rating} /> <span className='text-bold mt-2'> (250) </span>
         </div>
         <span>${product.price}</span>
-        <button type="button" className=" AddBtn btn btn-secondary bg-opacity-10">Add</button>
+        <button type="button" className=" AddBtn btn btn-light bg-opacity-10 border">Add</button>
       </Link>
     </div>
   )
