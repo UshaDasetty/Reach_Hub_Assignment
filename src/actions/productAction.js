@@ -42,12 +42,12 @@ export const getProductsDetails = (id) => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
-        const { data } = await axios.get(`https://dummyjson.com/products/${id}`);
-        console.log(data);
-        // let data = []
-        // if (response.status === 200) {
-        //     data = response.data.product
-        // }
+        const response = await axios.get(`https://dummyjson.com/products/${id}`);
+        console.log("Reponse...", response);
+        let data = {}
+        if (response.status === 200) {
+            data = response.data
+        }
 
         dispatch({
             type: PRODUCT_DETAILS_SUCCESS,
@@ -59,7 +59,7 @@ export const getProductsDetails = (id) => async (dispatch) => {
             type: PRODUCT_DETAILS_FAIL,
             payload: error,
         });
-        
+
     }
 };
 
