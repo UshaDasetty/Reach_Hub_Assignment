@@ -36,7 +36,7 @@
 
 .productCard > span {
     margin: 0.5vmax;
-    color: tomato;
+    color: #198754;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1vmax;
 }
@@ -76,4 +76,9 @@
         margin: 0.5vmax;
         font: 300 0.7vmax "Roboto";
     }
+}
+
+
+.bi-heart:hover {
+    color: tomato;
 }

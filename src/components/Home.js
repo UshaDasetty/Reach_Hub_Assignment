@@ -20,14 +20,16 @@ const Home = () => {
 
     /*------------------------------------------------------------------------------------------------------ */
     const dispatch = useDispatch();
-    const { loading, error, products, productsCount } = useSelector(state => state.products);
-    console.log(products.length);
+    const { error, products, productsCount } = useSelector(state => state.products);
+    //console.log(products.length);
 
     useEffect(() => {
-        console.log("state update gets called..");
-        // @ts-ignore
+        if(error) {
+            return alert.error(error);
+        }
+
         dispatch(getProducts());
-    }, [dispatch]);
+    }, [dispatch, error, alert ]);
 
     /*------------------------------------------------------------------------------------------------------ */
 
@@ -38,8 +40,8 @@ const Home = () => {
                 <div className="mt-2 bg-danger bg-gradient bg-opacity-25">
                     <div className="Offer container d-flex justify-content-batween">
                         <div className="mt-5 OfferText">
-                            <div className="badge text-success fs-1 text-wrap w-3">
-                                Grab 50% Off On Selected Headphone
+                            <div className="badge text-success fs-1 text-wrap w-6">
+                                Grab 50% Off On Selected Gadgets, Cosmetics and Decors
                             </div>
                             <div className="text-center">
                                 <button type="button" className=" BuyNow btn btn-success">Buy Now</button>
@@ -57,14 +59,13 @@ const Home = () => {
             <Filters />
             {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
 
-            <h2 className="homeHeading text-center text-decoration-underline text-dark">HeadPhones For You!</h2>
+            <h2 className="homeHeading text-center text-decoration-underline text-dark">Deals of the Day</h2>
             <div className="container" id="container" style={{ width: '100%', maxWidth: '90%' }}>
                 {products && products.length ? products.map((item) => {
-                    console.log("product....", item);
                     return <Product product={item} />
                 }) : <div className="d-flex justify-content-center">
-                        <div class="spinner-border" role="status">
-                            <span class="visually-hidden">Loading...</span>
+                        <div className="spinner-border" role="status">
+                            <span className="visually-hidden">Loading...</span>
                         </div>
                     </div>}
             </div>

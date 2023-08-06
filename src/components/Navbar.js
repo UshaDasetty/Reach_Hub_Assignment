@@ -21,9 +21,14 @@ const Navbar = () => {
                             Categories
                         </a>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Wired</a></li>
-                            <li><a className="dropdown-item" href="#">WireLess</a></li>
-                            <li><a className="dropdown-item" href="#">Airpods</a></li>
+                            <li><a className="dropdown-item" href="#">Mobiles</a></li>
+                            <li><a className="dropdown-item" href="#">Laptops</a></li>
+                            <li><a className="dropdown-item" href="#">Perfumes</a></li>
+                            <li><a className="dropdown-item" href="#">Fragrances</a></li>
+                            <li><a className="dropdown-item" href="#">Skin Care</a></li>
+                            <li><a className="dropdown-item" href="#">Groceries</a></li>
+                            <li><a className="dropdown-item" href="#">Home Decoration</a></li>
+
                         </ul>
                         </li>
 

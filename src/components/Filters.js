@@ -19,12 +19,16 @@ const Filters = () => {
                             <ul>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle rounded-pill bg-secondary bg-gradient bg-opacity-25" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span className="ps-3"> Headphone Type </span>
+                                    <span className="ps-3"> Categories </span>
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Neck Band</a></li>
-                                    <li><a className="dropdown-item" href="#">EarPhones</a></li>
-                                    <li><a className="dropdown-item" href="#">Air Pods</a></li>
+                                    <li><a className="dropdown-item" href="#">Mobiles</a></li>
+                                    <li><a className="dropdown-item" href="#">Laptops</a></li>
+                                    <li><a className="dropdown-item" href="#">Perfumes</a></li>
+                                    <li><a className="dropdown-item" href="#">Fragrances</a></li>
+                                    <li><a className="dropdown-item" href="#">Skin Care</a></li>
+                                    <li><a className="dropdown-item" href="#">Groceries</a></li>
+                                    <li><a className="dropdown-item" href="#">Home Decoration</a></li>
                                 </ul>
                             </li>
                             </ul>
@@ -60,27 +64,15 @@ const Filters = () => {
                             <ul>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle rounded-pill bg-secondary bg-gradient bg-opacity-25" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span className="ps-3"> Color </span>
+                                <span className="ps-3"> Top Brands </span>
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Black</a></li>
-                                    <li><a className="dropdown-item" href="#">Grey</a></li>
-                                    <li><a className="dropdown-item" href="#">Red</a></li>
-                                    <li><a className="dropdown-item" href="#">Yellow</a></li>
-                                    <li><a className="dropdown-item" href="#">Blue</a></li>
-                                </ul>
-                            </li>
-                            </ul>
-
-                            <ul>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle rounded-pill bg-secondary bg-gradient bg-opacity-25" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span className="ps-3"> Material </span>
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Plastic</a></li>
-                                    <li><a className="dropdown-item" href="#">Silicon</a></li>
-                                    <li><a className="dropdown-item" href="#">Leather</a></li>
+                                    <li><a className="dropdown-item" href="#">Apple</a></li>
+                                    <li><a className="dropdown-item" href="#">Samsung</a></li>
+                                    <li><a className="dropdown-item" href="#">Huawei</a></li>
+                                    <li><a className="dropdown-item" href="#">Infinix</a></li>
+                                    <li><a className="dropdown-item" href="#">Luxury Palace</a></li>
+                                    <li><a className="dropdown-item" href="#">Fogg</a></li>
                                 </ul>
                             </li>
                             </ul>
@@ -89,6 +81,19 @@ const Filters = () => {
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle rounded-pill bg-secondary bg-gradient bg-opacity-25" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span className="ps-3"> Offer </span>
+                                </a>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="#">But 1 Get 1</a></li>
+                                    <li><a className="dropdown-item" href="#">Buy 2 Get 1</a></li>
+                                    <li><a className="dropdown-item" href="#">Buy 4 @MRP</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+
+                            <ul>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle rounded-pill bg-secondary bg-gradient bg-opacity-25" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span className="ps-3"> Discount </span>
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="#">10% Off</a></li>

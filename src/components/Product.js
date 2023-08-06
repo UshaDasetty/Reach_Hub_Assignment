@@ -6,21 +6,20 @@ import ReactStars from 'react-rating-stars-component';
 const options = {
   edit: false,
   color: "rgba(20,20,20,0.1)",
-  activeColor: "tomato",
+  activeColor: "#198754",
   size: window.innerWidth < 600 ? 20 : 25,
-  value: 2.5,
   isHalf: true,
 }
 
 const Product = ({ product }) => {
-  console.log("in prod comppp", product);
   return (
     <div className='col-12 col-sm-12 col-md-6 col-lg-3'>
-      <Link className="productCard" to={product.id}>
+      <Link className="productCard position-relative" to={`/product/${product.id}`}>
         <img src={product.thumbnail} alt={product.title} />
+        <button type="button" className="position-absolute bottom-10 end-0 border rounded-circle bg-light m-3 p-2 pt-2 pb-1"><i class="bi bi-heart"></i></button>
         <p>{product.title}</p>
         <div>
-          <ReactStars value={product.rating} /> <span className='text-bold mt-2'> (250) </span>
+          <ReactStars value={product.rating} {...options}/> <span className='text-bold'> (250) </span>
         </div>
         <span>${product.price}</span>
         <button type="button" className=" AddBtn btn btn-light bg-opacity-10 border">Add</button>
