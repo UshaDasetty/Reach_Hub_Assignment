@@ -10,7 +10,6 @@ const Header = () => {
         <nav className="navbar bg-success text-light mt-2">
             <div className="container-fluid">
 
-                    {/* telephone call */}
                     <a className="navbar-brand text-light" href="#">
                         <i className="bi bi-telephone"><span> </span></i>
                         +001234567890

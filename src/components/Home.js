@@ -8,20 +8,11 @@ import { useSelector, useDispatch } from 'react-redux'
 
 
 
-// const product = {
-//     name: 'White Shirt',
-//     images: [{url:"https://t3.ftcdn.net/jpg/04/58/26/98/240_F_458269888_MXyWFCmbkH9Lscfzwz9NOAwSuGEY4zSm.jpg"}],
-//     price:'₹500',
-//     _id: 'usha',
-// }
-
-
 const Home = () => {
 
     /*------------------------------------------------------------------------------------------------------ */
     const dispatch = useDispatch();
     const { products, productsCount } = useSelector(state => state.products);
-    //console.log(products.length);
 
     useEffect(() => {
         dispatch(getProducts());
@@ -31,7 +22,6 @@ const Home = () => {
 
     return (
         <React.Fragment>
-            {/* <Navbar /> */}
             <div className="container">
                 <div className="mt-2 bg-danger bg-gradient bg-opacity-25">
                     <div className="Offer container d-flex justify-content-batween">
