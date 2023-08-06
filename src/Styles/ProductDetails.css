@@ -28,6 +28,28 @@
 }
 
 
+.Quantity > button {
+   font-weight:bold;
+}
+
+.Quantity > button:hover {
+    background-color: #198754;
+    color: white;
+}
+
+.Quantity > input {
+    border: none;
+    width: 2vmax;
+    text-align: center;
+    outline: none;
+    font: 400 0.8vmax "Roboto";
+    padding: 10px;
+    font-weight: bold;
+} 
+
+
 @media screen and (max-width: 600px){
     
 }
+
+

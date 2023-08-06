@@ -93,8 +93,13 @@ const renderProductDetails = (product) => {
         </div>
 
         <div>
-          <div className='d-flex justify-content-start'>
-            <h5 className='me-2'>Quantity</h5>
+          <div className='d-flex justify-content-start mb-3'>
+            <div className='me-2 Quantity border rounded-pill '>
+            <button type="button" class="btn border border-0 rounded-circle">-</button>
+              <input type='number' value='1' className=''/>
+              <button type="button" class="btn border border-0 rounded-circle">+</button>
+            </div>
+
             <div className='d-block'>
               <p className='mt-1 text-secondary'>{`Only ${product.stock} Items left!, Dont miss it`}</p>
             </div>
