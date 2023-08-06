@@ -20,16 +20,12 @@ const Home = () => {
 
     /*------------------------------------------------------------------------------------------------------ */
     const dispatch = useDispatch();
-    const { error, products, productsCount } = useSelector(state => state.products);
+    const { products, productsCount } = useSelector(state => state.products);
     //console.log(products.length);
 
     useEffect(() => {
-        if(error) {
-            return alert.error(error);
-        }
-
         dispatch(getProducts());
-    }, [dispatch, error, alert ]);
+    }, [dispatch, ]);
 
     /*------------------------------------------------------------------------------------------------------ */
 

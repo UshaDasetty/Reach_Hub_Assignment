@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactStars from 'react-rating-stars-component';
 import '../Styles/ProductDetails.css'
+import { getProductsDetails } from '../actions/productAction';
+import { useSelector, useDispatch } from 'react-redux'
+import { useParams } from 'react-router-dom';
 
 const product = {
   "id": 1,
@@ -23,6 +26,20 @@ const product = {
 }
 
 const ProductDetails = () => {
+/*------------------------------------------------------------------------------------------------------ */
+  const dispatch = useDispatch ();
+  const params = useParams ();
+
+  const { productDetails } = useSelector (
+    (state) => state.productDetails, 
+  );
+  console.log(product)
+  
+  useEffect(() => {
+    dispatch(getProductsDetails(params.id));
+  },[dispatch], params.id);
+
+/*------------------------------------------------------------------------------------------------------ */
   return (
     <div className='container d-flex justify-content-between border'>
 
